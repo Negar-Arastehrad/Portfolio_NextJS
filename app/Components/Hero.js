@@ -14,7 +14,7 @@ const Hero = () => {
     <div className={Style.hero}>
       <div className={Style.container}>
         <div className={Style.left}>
-          <p>Hello, I'm</p>
+          <p>Hello, I&#39;m</p>
           <h1>Negar Arastehrad</h1>
           <p>Junior FrontEnd Developer</p>
           <button  className={Style.cv}>

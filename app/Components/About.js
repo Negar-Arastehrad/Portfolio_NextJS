@@ -1,12 +1,11 @@
 'use client'
-import React, { useContext } from "react";
+import React from "react";
 import Style from "../Styles/About.module.css";
-import { ThemeContext } from "../Context/ThemeContext";
+
 
 
 const About = () => {
- const {theme}= useContext(ThemeContext)
- 
+
   return (
     <div className={Style.about} id="about">
       <div className={Style.container}>
@@ -18,7 +17,7 @@ const About = () => {
             <p>
               <span>A Little Bit About Me And My Soft Skills: </span>
               I am a motivated junior front-end developer and graduated in
-              software engineering. I am currently studying for a master's
+              software engineering. I am currently studying for a master&#39;s
               degree in the same field. My specialties include quickly learning
               new skills, responsibility, and capability of time management. I
               have a teamwork spirit and adaptability, and I am persistent in

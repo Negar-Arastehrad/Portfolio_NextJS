@@ -14,7 +14,7 @@ const Skills = () => {
     <div className={Style.skills} id="skills">
       <div className={Style.container}>
         <p className="title">Skills</p>
-        <h1>What I've Known So Far</h1>
+        <h1>What I&#39;ve Known So Far</h1>
 
         <div className={Style.mainContainer}>
           <SkillsBox

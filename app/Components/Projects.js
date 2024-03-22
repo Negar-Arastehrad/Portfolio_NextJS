@@ -18,7 +18,7 @@ const Projects = () => {
     <div className={Style.projects} id="projects">
       <div className={Style.container}>
         <p className="title">Projects</p>
-        <h1>What I've Bulit So Far</h1>
+        <h1>What I&#39;ve Bulit So Far</h1>
 
         <div className={Style.mainContainer}>
           <div className={Style.buttons}>
