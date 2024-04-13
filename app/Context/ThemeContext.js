@@ -1,27 +1,33 @@
-"use client"
+"use client";
 
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from "react";
 
-export const ThemeContext = createContext()
+export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [mounted, setMounted] = useState(false);
 
-    const [isDarkMode, setIsDarkMode] = useState(true)
-    
-    const toggleTheme = () => { setIsDarkMode((prev) => !prev) }
+  const toggleTheme = () => {
+    setIsDarkMode((prev) => !prev);
+  };
 
-    const theme = isDarkMode ? 'dark' : 'light'
+  const theme = isDarkMode ? "dark" : "light";
 
-    useEffect(() => {
-        document.documentElement.setAttribute("data-theme", theme)
-    }, [isDarkMode])
-    
+  useEffect(() => {
+    setMounted(true);
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [isDarkMode]);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
-        {props.children}
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {props.children}
     </ThemeContext.Provider>
-  )
-}
+  );
+};
 
-export default ThemeContextProvider
+export default ThemeContextProvider;
