@@ -7,7 +7,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import Me from "../../public/Me.png";
 
-
 const Hero = () => {
 
   return (

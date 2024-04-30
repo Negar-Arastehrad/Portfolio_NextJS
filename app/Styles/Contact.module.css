@@ -1,8 +1,8 @@
 .contact {
   width: 100%;
-  height: 100%;
-  margin: 9rem 0;
-  scroll-margin: 9rem;
+  min-height: 100vh;
+  padding-top: 4rem;
+  scroll-margin-top: 5rem;
 }
 
 .contact .container {
@@ -20,24 +20,30 @@
   max-width: 35%;
 }
 
+.contact .contactLine .Gmail {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
 .contact .contactLine a,
 .contactLine:nth-child(3) {
   display: flex;
   align-items: center;
   gap: 1.3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .contact .contactLine .icon {
   background-color: transparent;
   padding: 0.7rem 1.2rem;
-  padding-top: .9rem;
+  padding-top: 0.9rem;
   border-radius: 0.4rem;
   border: 2px solid var(--primary-color);
   position: relative;
 }
 
-.contact .contactLine .icon::before{
+.contact .contactLine .icon::before {
   content: "";
   position: absolute;
   top: 0;
@@ -54,7 +60,6 @@
   width: 100%;
 }
 
-
 @media screen and (max-width: 720px) {
   .contact {
     text-align: center;
@@ -64,5 +69,4 @@
     max-width: 75%;
     line-height: 2.5rem;
   }
-
 }

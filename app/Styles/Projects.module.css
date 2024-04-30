@@ -1,8 +1,7 @@
 .projects {
   width: 100%;
-  height: 100%;
-  margin: 9rem 0;
-  scroll-margin: 9rem;
+  min-height: 100vh;
+  scroll-margin-top: 8rem;
 }
 
 .projects .container {
@@ -140,11 +139,17 @@
 @media screen and (max-width: 575.98px) {
   .projects {
     text-align: center;
+    padding-top: 4rem;
   }
 
   .projects .mainContainer .buttons {
     max-width: 100%;
     justify-content: space-between;
+  }
+
+  .projects .buttons button {
+    padding: 0.7rem 1.3rem;
+    font-size: 1.2rem;
   }
 
   .projects .projectsContainer {
@@ -165,6 +170,7 @@
 @media screen and (min-width: 576px) and (max-width: 1199.98px) {
   .projects {
     text-align: center;
+    padding-top: 4rem;
   }
 
   .projects .mainContainer .buttons {
@@ -191,5 +197,9 @@
   .projects .mainContainer .buttons {
     max-width: 50%;
     justify-content: space-between;
+  }
+
+  .projects{
+    padding-top: 4rem;
   }
 }

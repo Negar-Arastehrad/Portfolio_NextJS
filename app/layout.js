@@ -2,8 +2,7 @@ import { Cousine } from "next/font/google";
 import "./globals.css";
 import ThemeContextProvider from "./Context/ThemeContext";
 
-const cousine = Cousine({ subsets: ["latin"],
-weight: ["400", "700",] });
+const cousine = Cousine({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
   title: "Negar Arastehrad",

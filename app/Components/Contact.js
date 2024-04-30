@@ -36,7 +36,7 @@ const Contact = () => {
             <span className={Style.icon}>
               <SiGmail />
             </span>
-            <p>n.arasterad@gmail.com</p>
+            <p className={Style.Gmail}>n.arasterad@gmail.com</p>
           </div>
 
           <div className={Style.contactLine}>
