@@ -15,7 +15,7 @@ const Contact = () => {
 
         <div className={Style.mainContainer}>
           <div className={Style.contactLine}>
-            <Link href="www.linkedin.com/in/negar-arastehrad" target="_blank">
+            <Link href="https://linkedin.com/in/negar-arastehrad" target="_blank">
               <span className={Style.icon}>
                 <FaLinkedinIn />
               </span>

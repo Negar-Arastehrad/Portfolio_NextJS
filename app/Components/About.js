@@ -18,7 +18,7 @@ const About = () => {
               <span>A Little Bit About Me And My Soft Skills: </span>
               I am a motivated junior front-end developer and graduated in
               software engineering. I am currently studying for a master&#39;s
-              degree in the same field. My specialties include quickly learning
+              degree in the same field. My specialities include quickly learning
               new skills, responsibility, and capability of time management. I
               have a teamwork spirit and adaptability, and I am persistent in
               learning.
