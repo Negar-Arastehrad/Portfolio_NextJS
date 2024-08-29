@@ -3,6 +3,7 @@ import todoList from '../public/todoList.png'
 import passGenerator from '../public/passGenerator.png'
 import quizApp from '../public/quizApp.png'
 import flowerShop from '../public/flowerShop.png'
+import artemis from '../public/artemis.png'
 
 export const ProjectData = [
   {
@@ -39,10 +40,18 @@ export const ProjectData = [
   },
   {
     id: 5,
-    name: "FlowerShop-React ",
+    name: "FlowerShop-React",
     category: "React",
     githubLink: "https://github.com/Negar-Arastehrad/FlowerShop-React",
     demoLink: "https://flower-shop-react.vercel.app/",
     image: flowerShop,
+  },
+  {
+    id: 6,
+    name: "Artemis-Next",
+    category: "Next.Js",
+    githubLink: "https://github.com/Negar-Arastehrad/artemis-web",
+    demoLink: "https://artemis-touroperator.vercel.app/",
+    image: artemis,
   },
 ];
