@@ -15,7 +15,10 @@ const Contact = () => {
 
         <div className={Style.mainContainer}>
           <div className={Style.contactLine}>
-            <Link href="https://linkedin.com/in/negar-arastehrad" target="_blank">
+            <Link
+              href="https://linkedin.com/in/negar-arastehrad"
+              target="_blank"
+            >
               <span className={Style.icon}>
                 <FaLinkedinIn />
               </span>
@@ -33,10 +36,12 @@ const Contact = () => {
           </div>
 
           <div className={Style.contactLine}>
-            <span className={Style.icon}>
-              <SiGmail />
-            </span>
-            <p className={Style.Gmail}>n.arasterad@gmail.com</p>
+            <Link href="mailto:n.arasterad@gmail.com" target="_blank">
+              <span className={Style.icon}>
+                <SiGmail />
+              </span>
+              <p>n.arasterad@gmail.com</p>
+            </Link>
           </div>
 
           <div className={Style.contactLine}>

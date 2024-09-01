@@ -53,15 +53,11 @@
   width: 100%;
 }
 
-.img-container {
-  width: 100%;
-  height: 100%;
-}
-
 .projects img {
   width: 500px;
   height: 300px;
   border-radius: 0.4rem;
+  object-fit: fill;
 }
 
 .projects .box:hover img {
@@ -78,6 +74,8 @@
 .projects .box {
   position: relative;
   margin: auto;
+  border-radius: 0.4rem;
+  height: 98%;
 }
 
 .projects .box .content {
@@ -164,6 +162,7 @@
   .projects img {
     width: 100%;
     height: 235px;
+    
   }
 
   .projects .box .content {
