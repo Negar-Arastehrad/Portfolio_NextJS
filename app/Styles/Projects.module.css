@@ -162,7 +162,7 @@
   }
 
   .projects img {
-    width: 350px;
+    width: 100%;
     height: 230px;
   }
 
@@ -189,7 +189,7 @@
   }
 
   .projects img {
-    width: 400px;
+    width: 100%;
     height: 250px;
   }
 
