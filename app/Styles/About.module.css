@@ -95,6 +95,10 @@
     top: 20px;
     transition: 0.8s ease;
   }
+
+  .about p {
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 1199.98px) {
