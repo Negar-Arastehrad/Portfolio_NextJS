@@ -26,6 +26,12 @@
   transition: 0.8s ease;
 }
 
+@media screen and (max-width: 575.98px) {
+  .box .name {
+    font-size: 1.2rem;
+  }
+}
+
 @media (min-width: 700px) and (max-width: 991.98px) {
   .box {
     width: 250px;
