@@ -1,6 +1,7 @@
 import { Cousine } from "next/font/google";
 import "./globals.css";
-import ThemeContextProvider from "./Context/ThemeContext";
+import dynamic from "next/dynamic";
+const ThemeContextProvider = dynamic(() => import("./Context/ThemeContext"))
 
 const cousine = Cousine({ subsets: ["latin"], weight: ["400", "700"] });
 

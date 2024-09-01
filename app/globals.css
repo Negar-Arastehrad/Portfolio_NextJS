@@ -57,7 +57,7 @@ a {
 
 h1 {
   background: var(--text-gradient);
-  font-size: 3rem;
+  font-size: 2.8rem;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

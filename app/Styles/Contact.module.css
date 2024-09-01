@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   gap: 1.3rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .contact .contactLine .icon {
@@ -68,5 +68,10 @@
   .contact .contactLine {
     max-width: 75%;
     line-height: 2.5rem;
+  }
+
+  .contact .contactLine a,
+  .contactLine:nth-child(3) {
+    font-size: 1.1rem;
   }
 }

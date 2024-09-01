@@ -31,7 +31,7 @@
   border: 2px solid var(--primary-color);
   border-radius: 0.5rem;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background-color: transparent;
   position: relative;
 }
@@ -51,6 +51,11 @@
 
 .projects .buttons button:hover::before {
   width: 100%;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
 }
 
 .projects img {
@@ -81,7 +86,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   gap: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -149,7 +154,7 @@
 
   .projects .buttons button {
     padding: 0.7rem 1.3rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .projects .projectsContainer {
@@ -157,13 +162,14 @@
   }
 
   .projects img {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 250px;
   }
 
   .projects .box .content {
     width: 100%;
     height: 100%;
+    font-size: 1.2rem;
   }
 }
 
@@ -183,13 +189,14 @@
   }
 
   .projects img {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 250px;
   }
 
   .projects .box .content {
     width: 100%;
     height: 100%;
+    font-size: 1.2rem;
   }
 }
 

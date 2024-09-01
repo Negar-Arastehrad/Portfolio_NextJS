@@ -30,7 +30,14 @@ const Projects = () => {
             {projects.map((project) => {
               return (
                 <div className={Style.box} key={project.id}>
-                  <Image src={project.image} alt={project.name} quality={100} />
+                  <div className="img-container">
+                    <Image
+                      src={project.image}
+                      alt={project.name}
+                      quality={100}
+                    />
+                  </div>
+
                   <div className={Style.content}>
                     <p>{project.name}</p>
                     <Link href={project.githubLink} target="_blank">

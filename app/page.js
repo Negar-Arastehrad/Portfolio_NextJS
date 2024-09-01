@@ -1,9 +1,10 @@
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
+import dynamic from "next/dynamic";
+const Navbar = dynamic(() => import("./Components/Navbar"))
+const Hero = dynamic(() => import("./Components/Hero"))
+const About = dynamic(() => import("./Components/About"))
+const Skills = dynamic(() => import("./Components/Skills"))
+const Projects = dynamic(() => import("./Components/Projects"))
+const Contact = dynamic(() => import("./Components/Contact"))
 
 export default function Home() {
   return (

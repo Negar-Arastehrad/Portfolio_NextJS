@@ -60,7 +60,7 @@
   border-radius: 0.5rem;
   cursor: pointer;
   margin: 0.5rem 0;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.2rem, 1.3rem);
   background-color: transparent;
   position: relative;
 }
@@ -127,6 +127,7 @@
   .hero .container {
     grid-template-columns: 1fr;
     text-align: center;
+    margin-top: 0;
   }
 
   .hero .right {
