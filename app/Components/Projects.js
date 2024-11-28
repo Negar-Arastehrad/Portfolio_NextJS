@@ -5,6 +5,7 @@ import Style from "../Styles/Projects.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectData } from "../../_data/ProjectData";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [projects, setProjects] = useState(ProjectData);
@@ -27,9 +28,31 @@ const Projects = () => {
             <button onClick={() => filterCategory("Next.Js")}>Next.js</button>
           </div>
           <div className={Style.projectsContainer}>
-            {projects.map((project) => {
+            {projects.map((project, index) => {
+              
+              const animations = [
+                {
+                  hidden: { opacity: 0, x: -100 },
+                  visible: { opacity: 1, x: 0 },
+                },
+                {
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 },
+                },
+              ];
+              
+              const currentAnimation = animations[index % animations.length];
+
               return (
-                <div className={Style.box} key={project.id}>
+                <motion.div
+                  className={Style.box}
+                  key={project.id}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={currentAnimation}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                >
                   <Image src={project.image} alt={project.name} quality={100} />
 
                   <div className={Style.content}>
@@ -41,7 +64,7 @@ const Projects = () => {
                       Live Demo
                     </Link>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>

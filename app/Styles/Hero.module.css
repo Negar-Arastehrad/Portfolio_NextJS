@@ -113,6 +113,10 @@
   }
 }
 
+.hero .icons {
+  display: flex;
+}
+
 .hero .icons a {
   color: var(--primary-color);
   font-size: 2rem;
@@ -151,6 +155,10 @@
 
   .hero .left p {
     font-size: 1.2rem;
+  }
+
+  .hero .icons {
+    justify-content: center;
   }
 
   @keyframes typing {

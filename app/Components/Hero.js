@@ -1,11 +1,39 @@
 "use client";
-
 import React from "react";
 import Style from "../Styles/Hero.module.css";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import Me from "../../public/Me.png";
+import { motion } from "framer-motion";
+
+// Framer Motion
+const iconVariants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+
+  visible1: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1.3,
+      duration: 1,
+      type: "spring",
+    },
+  },
+
+  visible2: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1.8,
+      duration: 1,
+      type: "spring",
+    },
+  },
+};
 
 const Hero = () => {
   return (
@@ -22,15 +50,24 @@ const Hero = () => {
           </button>
 
           <div className={Style.icons}>
-            <a href="https://github.com/Negar-Arastehrad" target="_blank">
+            <motion.a
+              href="https://github.com/Negar-Arastehrad"
+              target="_blank"
+              variants={iconVariants}
+              initial="hidden"
+              animate="visible1"
+            >
               <FaGithub />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="https://www.linkedin.com/in/negar-arastehrad/"
               target="_blank"
+              variants={iconVariants}
+              initial="hidden"
+              animate="visible2"
             >
               <FaLinkedinIn />
-            </a>
+            </motion.a>
           </div>
         </div>
 
