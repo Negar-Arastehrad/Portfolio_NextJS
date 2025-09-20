@@ -41,7 +41,7 @@ const About = () => {
     <div className={Style.about} id="about">
       <div className={Style.container}>
         <p className="title">About</p>
-        <h1>Get To know Me</h1>
+        <h1>Get To know Me </h1>
 
         <div className={Style.mainContainer}>
           <div className={Style.left}>
