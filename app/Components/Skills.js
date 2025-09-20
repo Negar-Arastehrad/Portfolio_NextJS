@@ -4,12 +4,12 @@ import Style from "../Styles/Skills.module.css";
 import SkillsBox from "./SkillsBox";
 import { motion } from "framer-motion";
 
-import firebase from "../../public/firebase.png";
 import html from "../../public/html.png";
 import js from "../../public/javascript.png";
 import nextjs from "../../public/nextjs.png";
 import react from "../../public/react.png";
 import css from "../../public/css.png";
+import TypeScript from "../../public/Typescript.png"
 
 // Framer Motion
 const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
@@ -64,13 +64,13 @@ const Skills = () => {
             <SkillsBox image={nextjs} name={"Next.js"} />
           </motion.div>
 
-          <motion.div
+           <motion.div
             variants={boxVariants}
             initial="hidden"
             whileInView="visible3"
             viewport={{ once: true }}
           >
-            <SkillsBox image={html} name={"HTML5"} />
+            <SkillsBox image={TypeScript} name={"TypeScript"} />
           </motion.div>
 
           <motion.div
@@ -79,7 +79,7 @@ const Skills = () => {
             whileInView="visible4"
             viewport={{ once: true }}
           >
-            <SkillsBox image={css} name={"CSS"} />
+            <SkillsBox image={html} name={"HTML5"} />
           </motion.div>
 
           <motion.div
@@ -88,7 +88,7 @@ const Skills = () => {
             whileInView="visible5"
             viewport={{ once: true }}
           >
-            <SkillsBox image={js} name={"JavaScript"} />
+            <SkillsBox image={css} name={"CSS"} />
           </motion.div>
 
           <motion.div
@@ -97,8 +97,9 @@ const Skills = () => {
             whileInView="visible6"
             viewport={{ once: true }}
           >
-            <SkillsBox image={firebase} name={"Firebase"} />
+            <SkillsBox image={js} name={"JavaScript"} />
           </motion.div>
+
         </div>
       </div>
     </div>
