@@ -53,11 +53,10 @@ const About = () => {
             >
               <span>A Little Bit About Me And My Soft Skills: </span>I am a
               motivated junior front-end developer and graduated in software
-              engineering. I am currently studying for a master&#39;s degree in
-              the same field. My specialities include quickly learning new
-              skills, responsibility, and capability of time management. I have
-              a teamwork spirit and adaptability, and I am persistent in
-              learning.
+              engineering. I have completed my master&#39;s degree in the same
+              field. My specialties include quickly learning new skills,
+              responsibility, and capability of time management. I have a
+              teamwork spirit and adaptability, and I am persistent in learning.
             </motion.p>
           </div>
           <div className={Style.right}>
@@ -68,11 +67,12 @@ const About = () => {
               viewport={{ once: true }}
             >
               <span>So far I have learned: </span>
-              HTML, CSS, JavaScript, Bootstrap, Sass, Jquery, React, NextJs and
-              I am well-informed about SEO, UI, and UX design. I am still
-              enthusiastically grabbing onto any other programming languages,
-              frameworks, or principles I can integrate into the coding web in
-              my head. I am also advanced in English.
+              HTML, CSS, JavaScript, Bootstrap, Sass, Jquery, React, NextJs,
+              TypeScript, Tailwind, DaisyUI, Material UI and I am well-informed
+              about SEO, UI, and UX design. I am still enthusiastically grabbing
+              onto any other programming languages, frameworks, or principles I
+              can integrate into the coding web in my head. I am also advanced
+              in English.
             </motion.p>
           </div>
         </div>
