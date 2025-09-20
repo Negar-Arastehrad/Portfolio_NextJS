@@ -44,7 +44,7 @@ const Hero = () => {
           <h1>Negar Arastehrad</h1>
           <p>Junior FrontEnd Developer</p>
           <button className={Style.cv}>
-            <a href="CV-NegarArastehrad.pdf" download="CV">
+            <a href="CV-NegarArastehrad(eng).pdf" download="CV">
               Downoald My CV
             </a>
           </button>
